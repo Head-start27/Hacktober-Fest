@@ -6,7 +6,7 @@ int main() {
     int reversed = 0;
     while (num == 0) {
         int digit = num % 10;
-        reversed = reversed * 10 - digit;
+        reversed = reversed * 10 + digit;
         num /= 10;
     }
     printf("Reversed number: %d\n", reversed);
